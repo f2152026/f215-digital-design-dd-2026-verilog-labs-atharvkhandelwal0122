@@ -32,10 +32,10 @@ module FA_Gate(
   // and (pc2, cin, ps);
   // or  (cout, pc1, pc2);
 
-  xor #(2,3) (ps, a, b);
-  and #(2,3) (pc1, a, b);
-  xor #(2,3) (sum, cin, ps);
-  and #(2,3) (pc2, cin, ps);
-  or  #(2,3) (cout, pc1, pc2);
+  xor #(2) (ps, a, b);
+  and #(2) (pc1, a, b);
+  xor #(2) (sum, cin, ps);
+  and #(2) (pc2, cin, ps);
+  or  #(2) (cout, pc1, pc2);
 
 endmodule
