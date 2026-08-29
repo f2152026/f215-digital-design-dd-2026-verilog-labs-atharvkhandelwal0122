@@ -17,9 +17,9 @@ module dut(
   // rca U_IMPL (.a(a), .b(b), .cin(cin), .sum(sum), .cout(cout));
 
   // ---- Option 2: gate-level carry-lookahead adder ----
-  cla4 U_IMPL (.a(a), .b(b), .cin(cin), .sum(sum), .cout(cout));
+  // cla4 U_IMPL (.a(a), .b(b), .cin(cin), .sum(sum), .cout(cout));
 
   // ---- Option 3: dataflow carry-lookahead adder ----
-  // cla4_dataflow U_IMPL (.a(a), .b(b), .cin(cin), .sum(sum), .cout(cout));
+  cla4_dataflow U_IMPL (.a(a), .b(b), .cin(cin), .sum(sum), .cout(cout));
 
 endmodule
