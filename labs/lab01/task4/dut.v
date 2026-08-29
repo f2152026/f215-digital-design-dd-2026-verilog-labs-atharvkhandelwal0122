@@ -17,9 +17,9 @@ module dut(
   // rca64 U_IMPL (.a(a), .b(b), .cin(cin), .sum(sum), .cout(cout));
 
   // ---- Option 2: flat (unblocked) 64-bit carry-lookahead adder ----
-  cla64_flat U_IMPL (.a(a), .b(b), .cin(cin), .sum(sum), .cout(cout));
+  // cla64_flat U_IMPL (.a(a), .b(b), .cin(cin), .sum(sum), .cout(cout));
 
   // ---- Option 3: blocked 64-bit carry-lookahead adder ----
-  // cla64_blocked U_IMPL (.a(a), .b(b), .cin(cin), .sum(sum), .cout(cout));
+  cla64_blocked U_IMPL (.a(a), .b(b), .cin(cin), .sum(sum), .cout(cout));
 
 endmodule
